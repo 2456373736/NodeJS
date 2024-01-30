@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Javascript EventListener</h1>
+    <p>Shows what events a user did being on that webpage.</p>
+    <button id="myBtn">HElloowowowow</button>
+    <p id="demo"></p>
+    <script>
+        let penguin = document.getElementById("myBtn");
+        penguin.addEventListener("mouseover",myFunc);
+        penguin.addEventListener("click",mysecFunc);
+        penguin.addEventListener("mouseout",mythirdFunc);
+        function myFunc(){
+            document.getElementById("demo").innerHTML +="Moused over!<br>";
+            }
+        function mysecFunc(){
+            document.getElementById("demo").innerHTML += "Clicked!<br>";
+        }
+        function mythirdFunc(){
+            document.getElementById("demo").innerHTML+="Mouse out!<br>"
+        }
+        </script>
+</body>
+</html>
